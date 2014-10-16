@@ -14,9 +14,14 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 group :development do
   gem 'spring'
   gem 'annotate', '~> 2.6.5'
+  gem 'quiet_assets'
 end
 
 group :developement, :test do
   gem 'rspec-rails', '~> 3.1.0'
   gem 'pry-rails'
+end
+
+group :test do
+  gem 'database_cleaner'
 end
